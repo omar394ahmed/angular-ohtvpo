@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Let's some magic happen :)
+</p>
+
+<p>Nodes count: {{ cities.length }}</p>
+
+<ul>
+  <!-- <li *ngFor="let city of cities">
+    {{ city.name }}
+  </li> -->
+  <li *lazyFor="let city of cities">
+    {{ city.name }}
+  </li>
+</ul>
